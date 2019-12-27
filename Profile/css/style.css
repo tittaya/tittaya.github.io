@@ -2,4 +2,29 @@ body{
     background-color: #F0FFFF;
 }
 
+#TopPage{
+   background-color: #87CEFA ;
+   width: 100%;
+   height: 50;
+   border: "1";
+}
 
+.BigHeaderFont{
+    font-family: 'Times New Roman';
+    color: #00008B;
+    font-size: 50px;
+    text-align: center;
+}
+
+.HeaderFont{
+    font-family: Cambria;
+    font-weight: bold;
+    color: rgb(69, 43, 219);
+    font-size: 35px;
+}
+
+.TextFont{
+    font-family: Helvetica;
+    color: black;
+    font-weight: normal;
+}
