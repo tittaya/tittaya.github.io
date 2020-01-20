@@ -1,0 +1,16 @@
+.Navigator{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.Container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.GameName{
+    margin: 0px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 8rem;
+    color: #4ECCA3;
+}
