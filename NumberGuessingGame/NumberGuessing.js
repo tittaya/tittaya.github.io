@@ -7,7 +7,7 @@ var result = document.getElementById("result");
 var hint = document.getElementById("hint");
 var showans = document.getElementById("show-answer");
 
-
+guessField.focus();
 submitBotton.addEventListener('click', function(){
     var userGuess = Number(guessField.value);
     previous.innerHTML += userGuess  + " ";
@@ -27,11 +27,12 @@ submitBotton.addEventListener('click', function(){
             if(userGuess > ans){
                 result.innerHTML = "WRONG!!!";
                 hint.innerHTML = "Your guess is too high!";
-
+                guessField.focus();
             }else{
                 if(userGuess < ans){
                 result.innerHTML = "WRONG!!!";
                 hint.innerHTML = "Your guess is too low!";
+                guessField.focus();
                 }
             }
         }
