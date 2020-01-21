@@ -1,16 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    background-color: #B7D9F6;
+    display: flex;
+    margin-top: 0px;
+}
 .Navigator{
     margin-top: 30px;
     margin-left: 40px;
+    align-self: auto;
+    
+    
 }
 .Container{
-    width: 70%;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
 .GameName{
-    margin: 0px;
-    font-family: 'Lobster', cursive;
-    text-shadow: 5px 0 #232931;
-    font-size: 8rem;
-    color: #4ECCA3;
+    margin: 30px;
+    font-family: "Merienda One";
+    font-weight: 700;
+    text-shadow: 5px 0 #274b79;
+    font-size: 80px;
+    color: rgba(75, 164, 247, 0.884);
 }
+.col-md-3.rules.box-header-with-border{
+    background-color: #f39c12;
+}
+
+.Answerbox{
+    width: 100%;
+    margin-left: 40px;
+    text-align: center;
+}
+

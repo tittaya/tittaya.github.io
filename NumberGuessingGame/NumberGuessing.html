@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Number Guessing Game</title>
     <link rel="stylesheet" href="NumberGuessing.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -17,10 +18,10 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/ios-add-circle-outline.svg">
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="Profile/dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="dist/css/skins/skin-blue-light.css">
+    <link rel="stylesheet" href="Profile/dist/css/skins/skin-blue-light.css">
      <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
@@ -32,9 +33,29 @@
         </div>
     </nav>
     <div class = "Container">
-        <h1 class="GameName">Number Guessing Game</h1>
+        <h1 class="GameName">NUMBER GUESSING GAME</h1>
     </div>
-    
+    <div class="Answerbox"> 
+        <p>Enter a guess  <input type = "text" name = "Number" id="number"/> <button id="submit">submit</button></p>
+    </div>
+    <div class="Previous-guess">
+        <div class="text">
+            <p>Your previous guess : </p>
+        </div>
+        <div class="previous-number" id="previous-number">
+            <p></p>
+        </div>
+    </div>
+    <div class="Result" id="result">
+        <p ></p>
+    </div>
+    <div class="Hint" id="hint">
+        <p></p>
+    </div>
+    <div class="Show-Answer" id="show-answer">
+        <p></p>
+    </div>
+
 
     <!-- ./wrapper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/core.js" 
@@ -49,6 +70,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js" 
     integrity="sha256-GqCMs8eqcNJo0k1Zw3TBSve9COCvjIX45PYKJlH0urU=" crossorigin="anonymous"></script>
     <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.min.js"></script>
+    <script src="NumberGuessing.js"></script>
 </body>
 </html>
