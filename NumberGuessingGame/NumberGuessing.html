@@ -26,34 +26,98 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <nav>
-        <div class="Navigator">
-            <a href="http://"><img src="game-img/icon-home.png" alt="" srcset="" width="60px" height="60px"></a>
+    <nav class="Navigator">
+            <a href="/tittaya.github.io/Profile/homepage.html">
+                <img src="game-img/icon-home.png" alt="" srcset="" width="60px" height="60px">
+            </a>
             Go back to Home Page
-        </div>
     </nav>
+
     <div class = "Container">
         <h1 class="GameName">NUMBER GUESSING GAME</h1>
     </div>
+
+    <div class="rule">
+        <div class="col-xs-9">
+            <div class="small-box bg-teal">
+                <div class="inner">
+                  <h4 align="middle">How to play</h4>
+                  <p > 
+                    <font font-family = "Helvetica" >I've selected a number form 1 - 100.</font><br>
+                    <font font-family = "Helvetica" > Can you guess what the number is?</font> 
+                  </p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-stats-bars"></i>
+                </div>
+              </div>
+        </div>
+    </div>
+
     <div class="Answerbox"> 
-        <p>Enter a guess  <input type = "text" name = "Number" id="number"/> <button id="submit">submit</button></p>
+        <div class="col-xs-9">
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    <p>Enter a guess  <input type = "text" style="color : black" name = "Number" id="number"/> 
+                        <button id="submit" style="color : black" >submit</button>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+
     <div class="Previous-guess">
-        <div class="text">
-            <p>Your previous guess : </p>
+        <div class="col-xs-9">
+            <div class="small-box bg-primary">
+                <div class="inner">
+                    <div class="text">
+                        <p>Your previous guess : </p>
+                    </div>
+                    <div class="previous-number" id="previous-number">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="previous-number" id="previous-number">
-            <p></p>
+    </div>
+
+    <div class="Result">
+        <div class="col-xs-9"> 
+            <div class="callout" id="resultBox">
+                <div class="inner">
+                    <p id="result"></p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="Result" id="result">
-        <p ></p>
+
+    <div class="Hint">
+        <div class="col-xs-9">
+            <div class="small-box" id="hint-box" style="background-color: #f39c12" >
+                <div class="inner">
+                    <h4 style="color:white">Hint : </h4>
+                     <p style="color:white" id="hint" ></p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="Hint" id="hint">
-        <p></p>
+
+    <div class="Show-Answer">
+        <div class="col-xs-9">
+            <div class="small-box bg-maroon" id="show-answer-box">
+                <div class="inner">
+                    <p id="show-answer"></p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="Show-Answer" id="show-answer">
-        <p></p>
+
+    <div class="Restart">
+        <div class="col-xs-9">
+            <div class="restart-button">
+                <button id="restart">New Game</button>
+            </div>  
+        </div>
     </div>
 
 
