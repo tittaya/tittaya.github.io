@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Contact</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="dist/css/skins/skin-blue-light.css">
      <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 
 </head>
 <body class="hold-transition skin-blue-light sidebar-mini">
@@ -49,7 +53,7 @@
         <div class="navbar-custom-menu">
           
            
-          
+   
         </div>
     
       </nav>
@@ -111,7 +115,70 @@
         </h1>
       </section>
       <section class="content">
-         
+         <div class="row">
+            <div class="col-md-6">
+               <div class="box box-primary">
+                  <div class="box-header with-border">
+                     <h3 class="box-title">Contact Form</h3>
+                  </div>
+                  <!-- /.box-header -->
+                  <!-- form start -->
+                  <form role="form">
+                     <div class="box-body">
+                        <div class="form-group">
+                           <label for="exampleInputEmail1">First name</label>
+                           <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your first name">
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleInputPassword1">Last name</label>
+                           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your last name">
+                        </div>
+                        <div class="form-group">
+                           <label for="">Gender</label>
+                           <select name="" id="" class="form-control">
+                              <option value="">Male</option>
+                              <option value="">Female</option>
+                              <option value="">Others</option>
+                           </select>
+                        </div>
+                        <div class="form-group">
+                           <label for="">Detail</label>
+                           <textarea name="" id="" class="form-control" cols="3" ></textarea>
+                        </div>
+                     </div>
+                     <!-- /.box-body -->
+                     <div class="box-footer">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="card text-white bg-teal mb-3">
+                  <div class="card-header">
+                     <h3 class="card-title">Your Contact Form</h3>
+                  </div>
+                  <div class="card-body">
+                     <div class="FirstName">
+                        <h4>First name: </h4>
+                        <h5 id="first-name"></h5>
+                     </div>
+                     <div class="LastName">
+                        <h4>Last name: </h4>
+                        <h5 id="last-name"></h5>
+                     </div>
+                     <div class="Gender">
+                        <h4>Gender: </h4>
+                        <h5 id="gender"></h5>
+                     </div>
+                     <div class="Detail">
+                        <h4>Detail: </h4>
+                        <h5 id="detail"></h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </section>
       <!-- /.content -->
     </div>
@@ -342,5 +409,14 @@
           $('.sidebar-menu').tree()
         })
       </script>
+    <!--FireBase-->
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+
+   <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+   <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+
 </body>
 </html>
