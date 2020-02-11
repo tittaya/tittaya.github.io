@@ -127,18 +127,18 @@
                      <div class="box-body">
                         <div class="form-group">
                            <label for="exampleInputEmail1">First name</label>
-                           <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your first name">
+                           <input type="firstName" class="form-control" id="first-name" placeholder="Enter your first name">
                         </div>
                         <div class="form-group">
                            <label for="exampleInputPassword1">Last name</label>
-                           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your last name">
+                           <input type="lastName" class="form-control" id="last-name" placeholder="Enter your last name">
                         </div>
                         <div class="form-group">
                            <label for="">Gender</label>
-                           <select name="" id="" class="form-control">
-                              <option value="">Male</option>
-                              <option value="">Female</option>
-                              <option value="">Others</option>
+                           <select name="" id="gender" class="form-control">
+                              <option value="1">Male</option>
+                              <option value="2">Female</option>
+                              <option value="3">Others</option>
                            </select>
                         </div>
                         <div class="form-group">
@@ -148,7 +148,8 @@
                      </div>
                      <!-- /.box-body -->
                      <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button id="save-button" type="save" class="btn btn-success">Save</button>
+                        <button id="reset-button" type="reset" class="btn btn-danger">Reset</button>
                      </div>
                   </form>
                </div>
@@ -161,19 +162,19 @@
                   <div class="card-body">
                      <div class="FirstName">
                         <h4>First name: </h4>
-                        <h5 id="first-name"></h5>
+                        <h5 id="first-name-result"></h5>
                      </div>
                      <div class="LastName">
                         <h4>Last name: </h4>
-                        <h5 id="last-name"></h5>
+                        <h5 id="last-name-result"></h5>
                      </div>
                      <div class="Gender">
                         <h4>Gender: </h4>
-                        <h5 id="gender"></h5>
+                        <h5 id="gender-result"></h5>
                      </div>
                      <div class="Detail">
                         <h4>Detail: </h4>
-                        <h5 id="detail"></h5>
+                        <h5 id="detail-result"></h5>
                      </div>
                   </div>
                </div>
@@ -404,18 +405,20 @@
     <script src="dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
-    <script>
+    <!-- <script>
         $(document).ready(function () {
           $('.sidebar-menu').tree()
         })
-      </script>
+      </script> -->
     <!--FireBase-->
    <!-- The core Firebase JS SDK is always required and must be listed first -->
    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
 
    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-   <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+   
+  <script src="contact.js"></script>
 
 
 </body>
