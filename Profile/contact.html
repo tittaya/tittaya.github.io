@@ -123,27 +123,31 @@
                   </div>
                   <!-- /.box-header -->
                   <!-- form start -->
-                  <form role="form">
+                  <form role="form" id="contact-form">
                      <div class="box-body">
                         <div class="form-group">
                            <label for="exampleInputEmail1">First name</label>
-                           <input type="firstName" class="form-control" id="first-name" placeholder="Enter your first name">
+                           <input type="text" class="form-control" name="firstName" id="first-name" placeholder="Enter your first name">
                         </div>
                         <div class="form-group">
                            <label for="exampleInputPassword1">Last name</label>
-                           <input type="lastName" class="form-control" id="last-name" placeholder="Enter your last name">
+                           <input type="text" class="form-control" name="lastName" id="last-name" placeholder="Enter your last name">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">E-mail</label>
+                          <input type="text" class="form-control" name="email" id="email" placeholder="Enter your E-mail">
                         </div>
                         <div class="form-group">
                            <label for="">Gender</label>
-                           <select name="" id="gender" class="form-control">
-                              <option value="1">Male</option>
-                              <option value="2">Female</option>
-                              <option value="3">Others</option>
+                           <select name="gender" id="gender" class="form-control">
+                              <option value="Male">Male</option>
+                              <option value="Female">Female</option>
+                              <option value="Others">Others</option>
                            </select>
                         </div>
                         <div class="form-group">
                            <label for="">Detail</label>
-                           <textarea name="" id="" class="form-control" cols="3" ></textarea>
+                           <textarea name="detail" id="" class="form-control" cols="3" ></textarea>
                         </div>
                      </div>
                      <!-- /.box-body -->
@@ -153,33 +157,26 @@
                      </div>
                   </form>
                </div>
-            </div>
-            <div class="col-md-6">
-               <div class="card text-white bg-teal mb-3">
-                  <div class="card-header">
-                     <h3 class="card-title">Your Contact Form</h3>
+            </div>   
+         </div>
+         <div class="col-xs-12" id="">
+               <div class="box">
+                  <div class="box-header">
+                     <h3 class="card-title" align="middle">Contact List</h3>
                   </div>
-                  <div class="card-body">
-                     <div class="FirstName">
-                        <h4>First name: </h4>
-                        <h5 id="first-name-result"></h5>
-                     </div>
-                     <div class="LastName">
-                        <h4>Last name: </h4>
-                        <h5 id="last-name-result"></h5>
-                     </div>
-                     <div class="Gender">
-                        <h4>Gender: </h4>
-                        <h5 id="gender-result"></h5>
-                     </div>
-                     <div class="Detail">
-                        <h4>Detail: </h4>
-                        <h5 id="detail-result"></h5>
-                     </div>
+                  <div class="box-body table-responsive no-padding" >
+                     <table class="table taable-hover">
+                        <tbody id="contact-table">
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                     </table>
                   </div>
                </div>
             </div>
-         </div>
       </section>
       <!-- /.content -->
     </div>
@@ -410,13 +407,18 @@
           $('.sidebar-menu').tree()
         })
       </script> -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
     <!--FireBase-->
    <!-- The core Firebase JS SDK is always required and must be listed first -->
-   <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
 
-   <!-- TODO: Add SDKs for Firebase products that you want to use
+  <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+
    
   <script src="contact.js"></script>
 
